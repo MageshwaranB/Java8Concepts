@@ -1,0 +1,32 @@
+Functional interface:
+	 * Functional interface is a concept in which an interface has only one abstract
+	 * methods. We can denote the functional interface by an annotation although it
+	 * not needed to explicitly mentioned
+	 * We can have more than one abstract methods but in the case, we can't use lambda expression
+List of important functional interfaces introduced in java 8
+
+* UnaryOperator<T>
+	abstract Method: T apply(T t)
+	Examples: String::toLowerCase,Math::tan
+
+* BinaryOperator<T>
+	abstract Method: T apply(T t1,T t2)
+	Examples: BigInteger::add,Math::pow
+
+* Function<T,R>
+	R apply(T t)
+	Examples: Arrays::asList, Integer::toBinaryString
+	
+* Predicate<T,U>
+	boolean test(T t, U u)
+	Examples: String::isEmpty, Character::isDigit
+
+* Supplier<T>
+	T get()
+	Examples: LocalDate::now, Instant::now
+	
+* Consumer<T>
+	void accept(T t)
+	Examples: System.out::println, Error::printStackTrace
+
+	 
